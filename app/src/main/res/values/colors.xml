@@ -14,4 +14,5 @@
     <color name="hitam">#474747</color>
     <color name="gray_20">#BFBFBF</color>
     <color name="placeholder">#6FB6B6B6</color>
+    <color name="transparent">#800000000</color>
 </resources>

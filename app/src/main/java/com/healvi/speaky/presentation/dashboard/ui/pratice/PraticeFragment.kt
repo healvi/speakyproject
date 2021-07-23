@@ -14,11 +14,7 @@ class PraticeFragment : Fragment() {
 
     private lateinit var praticeViewModel: PraticeViewModel
     private var _binding: FragmentPraticeBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -26,14 +22,8 @@ class PraticeFragment : Fragment() {
     ): View? {
         praticeViewModel =
             ViewModelProvider(this).get(PraticeViewModel::class.java)
-
         _binding = FragmentPraticeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textNotifications
-        praticeViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
         return root
     }
 

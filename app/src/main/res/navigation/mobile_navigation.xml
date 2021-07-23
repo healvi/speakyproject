@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_dashboard">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_module"
         android:name="com.healvi.speaky.presentation.dashboard.ui.module.ModuleFragment"
         android:label="@string/title_module"
         tools:layout="@layout/fragment_module" />
@@ -18,17 +18,17 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_pratice"
         android:name="com.healvi.speaky.presentation.dashboard.ui.pratice.PraticeFragment"
         android:label="@string/title_practice"
         tools:layout="@layout/fragment_pratice" />
     <fragment
-        android:id="@+id/historyFragment"
+        android:id="@+id/navigation_history"
         android:name="com.healvi.speaky.presentation.dashboard.ui.history.HistoryFragment"
         android:label="@string/title_history"
         tools:layout="@layout/fragment_history" />
     <fragment
-        android:id="@+id/profileFragment"
+        android:id="@+id/navigation_profile"
         android:name="com.healvi.speaky.presentation.dashboard.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />

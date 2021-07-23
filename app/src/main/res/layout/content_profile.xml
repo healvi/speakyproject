@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:backgroundTint="@color/blue_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/img_profile"
+               android:layout_width="120dp"
+               android:layout_height="120dp"
+               android:layout_marginTop="80dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               tools:src="@drawable/avatar_default" />
+
+           <TextView
+               android:id="@+id/textView4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               android:textColor="#FFFFFF"
+               android:textSize="16sp"
+               app:layout_constraintEnd_toEndOf="@+id/img_profile"
+               app:layout_constraintHorizontal_bias="0.462"
+               app:layout_constraintStart_toStartOf="@+id/img_profile"
+               app:layout_constraintTop_toBottomOf="@+id/img_profile"
+               tools:text="@string/username" />
+
+           <TextView
+               android:id="@+id/peringkat"
+               style="@style/regularTextWhite"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:background="@drawable/tv_custom"
+               android:paddingStart="15dp"
+               android:paddingTop="7dp"
+               android:paddingEnd="15dp"
+               android:paddingBottom="7dp"
+               app:layout_constraintEnd_toEndOf="@+id/textView4"
+               app:layout_constraintStart_toStartOf="@+id/textView4"
+               app:layout_constraintTop_toBottomOf="@+id/textView4"
+               tools:text="@string/xxx" />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:listitem="@layout/item_profile_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
