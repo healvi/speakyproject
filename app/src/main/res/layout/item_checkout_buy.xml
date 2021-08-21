@@ -17,14 +17,16 @@
 
         <TextView
             android:id="@+id/tv_title_langganan"
-            style="@style/regularTextGrayThin"
-            android:layout_width="wrap_content"
+            style="@style/regularTextBlueThin"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_check_langganan"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="12 mei 2020" />
+            tools:text="@string/xxx" />
 
         <TextView
             android:id="@+id/tv_title_detail_langganan"
@@ -33,30 +35,22 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="Score :"
+            android:layout_marginEnd="16dp"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_check_langganan"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title_langganan" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_langganan"
+            tools:text="xxx" />
 
-        <TextView
-            android:id="@+id/tv_item_time"
-            style="@style/regularTextGrayThin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            app:layout_constraintStart_toEndOf="@+id/tv_title_langganan"
-            app:layout_constraintTop_toTopOf="@+id/tv_title_langganan"
-            tools:text="19.00" />
 
         <TextView
             android:id="@+id/tv_check_langganan"
-            style="@style/regularTextBlueThin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title_detail_langganan"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tv_item_time"
-            tools:text="Ujian" />
+            app:layout_constraintTop_toTopOf="@+id/tv_title_langganan"
+            tools:text="1x" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

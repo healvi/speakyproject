@@ -1,4 +1,4 @@
-package com.healvi.speaky.presentation.dashboard.ui.dashboard
+package com.healvi.speaky.presentation.dashboard.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

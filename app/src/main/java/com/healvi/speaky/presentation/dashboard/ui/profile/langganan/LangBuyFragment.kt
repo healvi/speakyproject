@@ -7,12 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import com.healvi.speaky.R
 
-class LanggananListFragment : Fragment() {
+
+class LangBuyFragment : Fragment() {
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_langganan_list, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_lang_buy, container, false)
     }
+
 }
