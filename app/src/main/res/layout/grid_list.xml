@@ -22,10 +22,10 @@
             android:src="@color/blue_700"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
 
         <TextView
-            android:id="@+id/module_title"
             style="@style/regularText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

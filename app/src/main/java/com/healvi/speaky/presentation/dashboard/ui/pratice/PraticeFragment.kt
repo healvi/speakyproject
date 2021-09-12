@@ -13,22 +13,19 @@ import com.healvi.speaky.databinding.FragmentPraticeBinding
 class PraticeFragment : Fragment() {
 
     private lateinit var praticeViewModel: PraticeViewModel
-    private var _binding: FragmentPraticeBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentPraticeBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        praticeViewModel =
-            ViewModelProvider(this).get(PraticeViewModel::class.java)
-        _binding = FragmentPraticeBinding.inflate(inflater, container, false)
+    ): View {
+
+        binding = FragmentPraticeBinding.inflate(inflater, container, false)
         val root: View = binding.root
         return root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
     }
 }

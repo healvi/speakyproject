@@ -16,12 +16,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <include android:id="@+id/pratice_content_detail"
-            layout="@layout/content_pratice"/>
+        <include layout="@layout/content_pratice"/>
     </androidx.core.widget.NestedScrollView>
 
     <ProgressBar
-        android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

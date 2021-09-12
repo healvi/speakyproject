@@ -37,31 +37,10 @@
         <item name="colorAccent">@color/blue_700</item>
     </style>
 
-    <style name="customButtonRect" parent="Theme.AppCompat.Light">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/btn_custom_rect</item>
-        <item name="textAllCaps">false</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:paddingStart">15dp</item>
-        <item name="android:paddingEnd">15dp</item>
-    </style>
     <style name="customButton" parent="Theme.AppCompat.Light">
         <item name="android:layout_width">280dp</item>
         <item name="android:layout_height">50dp</item>
         <item name="android:background">@drawable/btn_custom</item>
-        <item name="textAllCaps">false</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:paddingStart">15dp</item>
-        <item name="android:paddingEnd">15dp</item>
-    </style>
-
-    <style name="customButtonY" parent="Theme.AppCompat.Light">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">30dp</item>
-        <item name="android:background">@drawable/btn_custom_y</item>
         <item name="textAllCaps">false</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">16sp</item>
@@ -156,20 +135,6 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="regularTextWhiteThin">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:fontFamily">@font/vision_regular</item>
-    </style>
-
-    <style name="titleText">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
     <style name="titleTextWhite">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>

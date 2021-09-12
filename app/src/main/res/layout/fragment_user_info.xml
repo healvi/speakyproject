@@ -7,7 +7,7 @@
     tools:context=".presentation.sign.fragment.register.UserInfoFragment">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView"
+        android:id="@+id/avatar"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginTop="89dp"
@@ -17,26 +17,26 @@
         tools:src="@drawable/avatar_default" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/ganti_foto"
         style="@style/regularTextBlue"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/ganti_foto"
-        app:layout_constraintEnd_toEndOf="@+id/circleImageView"
-        app:layout_constraintStart_toStartOf="@+id/circleImageView"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+        app:layout_constraintEnd_toEndOf="@+id/avatar"
+        app:layout_constraintStart_toStartOf="@+id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
 
     <EditText
         android:id="@+id/edt_fullname_userinfo"
         style="@style/inputBox"
         android:layout_marginTop="64dp"
         android:hint="Nama Lengkap"
-        app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+        app:layout_constraintEnd_toEndOf="@+id/avatar"
         app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="@+id/circleImageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/ganti_foto" />
 
     <EditText
         android:id="@+id/edt_username_userinfo"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edt_fullname_userinfo" />
 
     <Button
-        android:id="@+id/btn_next_userinfo"
+        android:id="@+id/next"
         style="@style/customButton"
         android:layout_width="280dp"
         android:layout_height="50dp"
@@ -59,4 +59,13 @@
         app:layout_constraintStart_toStartOf="@+id/edt_username_userinfo"
         app:layout_constraintTop_toBottomOf="@+id/edt_username_userinfo" />
 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

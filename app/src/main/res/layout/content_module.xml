@@ -93,7 +93,6 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_another_module"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

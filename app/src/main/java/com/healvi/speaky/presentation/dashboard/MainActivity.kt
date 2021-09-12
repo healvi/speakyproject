@@ -22,12 +22,15 @@ class MainActivity : AppCompatActivity() {
 
         val navView: BottomNavigationView = binding.navView
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_dashboard, R.id.navigation_module, R.id.navigation_pratice, R.id.navigation_history, R.id.navigation_profile
-            )
-        )
+        val navController = findNavController(R.id.nav_host_fragment_activity_home)
+        navView.itemIconTintList = null
+        val appBarConfiguration = AppBarConfiguration.Builder(
+            R.id.navigation_dashboard,
+            R.id.navigation_module,
+            R.id.navigation_pratice,
+            R.id.navigation_history,
+            R.id.navigation_profile
+        ).build()
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
