@@ -9,8 +9,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.healvi.speaky.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
-
-    private lateinit var dashboardViewModel: DashboardViewModel
     private lateinit var binding: FragmentDashboardBinding
 
     override fun onCreateView(
